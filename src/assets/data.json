@@ -1,0 +1,11 @@
+{
+    "alumnos":[
+        {
+            "nombres" : "Junior David",
+            "apellidos": "Gallardo Mamani",
+            "dni": "74084390",
+            "codigo": "201923001"
+        }
+
+    ]
+}
