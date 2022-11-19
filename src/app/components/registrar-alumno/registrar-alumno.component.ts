@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { Alumno } from '../../models/alumno';
 import { AlumnosServicesService } from '../../services/alumnos-services.service';
+import {MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-registrar-alumno',
   templateUrl: './registrar-alumno.component.html',
@@ -11,41 +12,46 @@ import { AlumnosServicesService } from '../../services/alumnos-services.service'
 })
 export class RegistrarAlumnoComponent implements OnInit {
 
-  myForm!: FormGroup;
-  constructor(private fb: FormBuilder, private snackBar: MatSnackBar, private router: Router, private alumnosservice: AlumnosServicesService) { }
+  myForm !: FormGroup;
+  actionBtn: string = "Save";
+  constructor(private fb: FormBuilder, private alumnosservice: AlumnosServicesService, 
+    private snackBar: MatSnackBar,
+    private router: Router
 
-  ngOnInit(): void {this.reactiveForm();}
+   ) { }
 
-  reactiveForm(){
-    this.myForm = this.fb.group({
+  ngOnInit(): void {
+
+      this.myForm = this.fb.group({
       id: [''],
-      nombres: ['', [Validators.required]],
-      apellidos: ['', [Validators.required]],
-      dni: ['', [Validators.required]],
-      codigo: ['', [Validators.required]]
-    })
-  }
+      nombre: ['', Validators.required],
+      apellido: ['', Validators.required],
+      dni: ['', Validators.required],
+      codigo: ['', Validators.required],
 
-  saveAlumnos(){
-    const alumno: Alumno = {
-      nombres: this.myForm.get('nombre-alumno')!.value,
-      apellidos: this.myForm.get('apellidos-alumno')!.value,
-      dni: this.myForm.get('DNI-alumno')!.value,
-      codigo: this.myForm.get('codigo-alumno')!.value,
+  });
+  } 
+
+  saveAlumnos(): void {
+    const alumno:Alumno = {
+      id: 0,
+      nombres: this.myForm.get('nombre')!.value,
+      apellidos: this.myForm.get('apellido')!.value,
+      dni: this.myForm.get('dni')!.value,
+      codigo: this.myForm.get('codigo')!.value,
     };
-    
-    this.alumnosservice.addAlumnos(alumno).subscribe({
-      next:(data) => {
-        this.snackBar.open('El alumno ha sido registrado exitosamente!', '',{
+    this.alumnosservice.addAlumno(alumno).subscribe({
+      next: (data) => {
+        this.snackBar.open('El knowledge fue registrado con exito!', '', {
           duration: 6000,
         });
-        this.router.navigate(['/home']);
+        this.router.navigate(['/business/knowledges']);
       },
       error: (err) => {
         console.log(err);
-      }
-    })
-
+      },
+    });
   }
+  
 
 }

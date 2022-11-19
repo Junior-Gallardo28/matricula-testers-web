@@ -9,7 +9,7 @@ export class AlumnosServicesService {
   base_URL: string = environment.base_URL;
   constructor( private http: HttpClient) {}
 
-  addAlumnos(Alumno: Alumno){
-    return this.http.post<Alumno>(this.base_URL, Alumno);
+  addAlumno(alumno:Alumno) {
+    return this.http.post<Alumno>(this.base_URL, alumno);
   }
 }
