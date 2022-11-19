@@ -1,5 +1,82 @@
-<body>
-   <h1>ALUMNOS</h1>
-   <h2 class= "text">Aun no hay registros hechos :(</h2>
-   <button mat-flat-button class="btnRegistrar" onclick="isStudentcreated = true"> Registar Alumnos</button>
-</body>
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Registrar Producto</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
+    <form [formGroup]="myForm" autocomplete="off">
+      <div class="col-lg-12">
+        <mat-form-field class="example-container" [style.fontSize.px]="16">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+        <div
+          *ngIf="
+            myForm.get('name')?.hasError('required') &&
+            myForm.get('name')?.touched
+          "
+          style="margin-top: -20px"
+        >
+          <span class="mda-form-msg"> This field is required </span>
+        </div>
+        <div
+          *ngIf="myForm.get('name')?.hasError('maxlength')"
+          style="margin-top: -20px"
+        >
+          <span class="mda-form-msg">
+            This field must have a maximum of 40 characters
+          </span>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <mat-form-field class="example-container" [style.fontSize.px]="16">
+          <mat-label>Photo</mat-label>
+          <input matInput formControlName="ohoto" />
+        </mat-form-field>
+        <div
+          *ngIf="
+            myForm.get('photo')?.hasError('required') &&
+            myForm.get('photo')?.touched
+          "
+          style="margin-top: -20px"
+        >
+          <span class="mda-form-msg">This field is required </span>
+        </div>
+      </div>
+
+      <div class="col-lg-12">
+        <mat-form-field class="example-container" [style.fontSize.px]="16">
+          <mat-label>Favorite Sports</mat-label>
+          <input matInput formControlName="favoritesports" />
+        </mat-form-field>
+      </div>
+
+      <div class="col-lg-12">
+        <mat-form-field class="example-container" [style.fontSize.px]="16">
+          <mat-label>Points</mat-label>
+          <input matInput formControlName="points" />
+        </mat-form-field>
+      </div>
+
+      <div class="col-lg-12">
+        <button
+          class="btn btn-success btn-lg float-right"
+          type="button"
+          style="margin-left: 10 px"
+          (click)="saveAlumnos()"
+        >
+          Save
+        </button>
+        <button
+          class="btn btn-secondary btn-lg float-right"
+          type="button"
+          routerLink="/business/Artists"
+        >
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
