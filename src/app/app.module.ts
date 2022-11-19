@@ -20,6 +20,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { RegistrarAlumnoComponent } from './components/registrar-alumno/registrar-alumno.component';
 import { ListarAlumnosComponent } from './components/listar-alumnos/listar-alumnos.component';
+import {MatTableModule} from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +45,7 @@ import { ListarAlumnosComponent } from './components/listar-alumnos/listar-alumn
     MatListModule,
     HttpClientModule,
     MatFormFieldModule,
+    MatTableModule,
     FormsModule
   ],
   providers: [],
