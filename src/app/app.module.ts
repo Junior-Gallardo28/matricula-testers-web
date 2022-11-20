@@ -22,6 +22,7 @@ import { RegistrarAlumnoComponent } from './components/registrar-alumno/registra
 import { ListarAlumnosComponent } from './components/listar-alumnos/listar-alumnos.component';
 import {MatTableModule} from '@angular/material/table';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,7 @@ import {MatTableModule} from '@angular/material/table';
     RegistrarAlumnoComponent,
     LoginAdminComponent,
     HomeComponent,
-    ListarAlumnosComponent,
+    ListarAlumnosComponent
   ],
   imports: [
     BrowserModule,
