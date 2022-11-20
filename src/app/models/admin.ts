@@ -1,4 +1,4 @@
-export class Admin {
-    usuario!: string;
-    password!: string;
+export interface Admin {
+    usuario: string;
+    password: string;
 }

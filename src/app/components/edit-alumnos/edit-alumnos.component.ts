@@ -4,7 +4,6 @@ import { Alumno } from 'src/app/models/alumno';
 import { AlumnosServicesService } from '../../services/alumnos-services.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-edit-alumnos',
@@ -45,8 +44,8 @@ export class EditAlumnosComponent implements OnInit {
   updateAlumno(): void{
     const alumno: Alumno = {
       id: this.idAlumno,
-      nombres: this.myForm.get('nombre')!.value,
-      apellidos: this.myForm.get('apellido')!.value,
+      nombres: this.myForm.get('nombres')!.value,
+      apellidos: this.myForm.get('apellidos')!.value,
       dni: this.myForm.get('dni')!.value,
       codigo: this.myForm.get('codigo')!.value
     };

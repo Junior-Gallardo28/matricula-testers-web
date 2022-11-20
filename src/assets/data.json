@@ -3,16 +3,15 @@
     {
       "id": 1,
       "nombres": "Nicole",
-      "apellidos": "Rojas",
-      "dni": "61296002",
-      "codigo": "201923003"
+      "apellidos": "soteldinho",
+      "dni": "612123122",
+      "codigo": "201923033"
     }
   ],
-
   "admin": [
     {
       "usuario": "admin",
-      "password": "admin11" 
+      "password": "admin11"
     }
   ]
 }

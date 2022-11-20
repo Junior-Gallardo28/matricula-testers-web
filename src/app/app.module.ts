@@ -16,11 +16,13 @@ import { MatListModule } from '@angular/material/list';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LoginAdminComponent } from './components/login-admin/login-admin.component';
 import { HomeComponent } from './components/home/home.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatFormFieldModule, MatLabel } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { RegistrarAlumnoComponent } from './components/registrar-alumno/registrar-alumno.component';
 import { ListarAlumnosComponent } from './components/listar-alumnos/listar-alumnos.component';
 import {MatTableModule} from '@angular/material/table';
+import { EditAlumnosComponent } from './components/edit-alumnos/edit-alumnos.component';
+import {MatMenu, MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import {MatTableModule} from '@angular/material/table';
     LoginAdminComponent,
     HomeComponent,
     ListarAlumnosComponent,
+    EditAlumnosComponent
   ],
   imports: [
     BrowserModule,
@@ -46,8 +49,8 @@ import {MatTableModule} from '@angular/material/table';
     HttpClientModule,
     MatFormFieldModule,
     MatTableModule,
-    FormsModule,
-    MatMenuModule
+    MatMenuModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
