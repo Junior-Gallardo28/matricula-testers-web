@@ -21,7 +21,8 @@ import { FormsModule } from '@angular/forms';
 import { RegistrarAlumnoComponent } from './components/registrar-alumno/registrar-alumno.component';
 import { ListarAlumnosComponent } from './components/listar-alumnos/listar-alumnos.component';
 import {MatTableModule} from '@angular/material/table';
-
+import { EditAlumnosComponent } from './components/edit-alumnos/edit-alumnos.component';
+import {MatMenu, MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import {MatTableModule} from '@angular/material/table';
     LoginAdminComponent,
     HomeComponent,
     ListarAlumnosComponent,
+    EditAlumnosComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import {MatTableModule} from '@angular/material/table';
     HttpClientModule,
     MatFormFieldModule,
     MatTableModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
