@@ -14,9 +14,10 @@ import { AlumnosServicesService } from 'src/app/services/alumnos-services.servic
 })
 export class ListarAlumnosComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'nombre', 'apellido', 'dni', 'codigo'];
+  displayedColumns: string[] = ['id', 'nombre', 'apellido', 'dni', 'codigo', 'actions'];
   dataSource = new MatTableDataSource<Alumno>();
   alumno!: Alumno[];
+  actionBtn : string = "Save";
 
   @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
 
@@ -39,6 +40,10 @@ export class ListarAlumnosComponent implements OnInit {
     });
   }
 
+  /*editAlumno() {
+    this.alumnosServices.updateAlumno(id, this.alumno)
+  }*/
+
   deleteAlumno(id: number) {
     this.alumnosServices.deleteAlumno(id).subscribe(() => {
       this.dataSource.data = this.dataSource.data.filter((e: Alumno) => {
@@ -49,5 +54,7 @@ export class ListarAlumnosComponent implements OnInit {
       });
     });
   }
+
+  
 
 }
