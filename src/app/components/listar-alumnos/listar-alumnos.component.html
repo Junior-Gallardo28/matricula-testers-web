@@ -47,10 +47,10 @@
     <ng-container matColumnDef="actions">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>
       <td mat-cell *matCellDef="let element; let i = index">
-        <a class="pointer" routerLink="/admin/knowledge/edit/{{ element.id }}" style="color: #1878b0">
+        <a class="pointer" routerLink="alumnos/editar-alumno/{{ element.id }}" style="color: #1878b0">
           <mat-icon>edit</mat-icon>
         </a>
-  
+        
         <a (click)="deleteAlumno(element.id)" class="pointer" style="color: #e15639">
           <mat-icon>delete</mat-icon>
         </a>

@@ -1,18 +1,18 @@
 {
   "alumnos": [
     {
-      "id": "1",
-      "nombres": "Junior David",
-      "apellidos": "Gallardo Mamani",
-      "dni": "74084390",
-      "codigo": "201923001"
-    },
+      "id": 1,
+      "nombres": "Nicole",
+      "apellidos": "Rojas",
+      "dni": "61296002",
+      "codigo": "201923003"
+    }
+  ],
+
+  "admin": [
     {
-      "id": "2",
-      "nombres": "Gabriel",
-      "apellidos": "Taipe",
-      "dni": "90129031",
-      "codigo": "123012031"
+      "usuario": "admin",
+      "password": "admin11" 
     }
   ]
 }
