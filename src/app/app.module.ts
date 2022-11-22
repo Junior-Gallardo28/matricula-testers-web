@@ -23,6 +23,9 @@ import { ListarAlumnosComponent } from './components/listar-alumnos/listar-alumn
 import {MatTableModule} from '@angular/material/table';
 import { EditAlumnosComponent } from './components/edit-alumnos/edit-alumnos.component';
 import {MatMenu, MatMenuModule} from '@angular/material/menu';
+import { SignupAdminComponent } from './components/signup-admin/signup-admin.component';
+
+
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import {MatMenu, MatMenuModule} from '@angular/material/menu';
     LoginAdminComponent,
     HomeComponent,
     ListarAlumnosComponent,
-    EditAlumnosComponent
+    EditAlumnosComponent,
+    SignupAdminComponent
   ],
   imports: [
     BrowserModule,

@@ -42,7 +42,7 @@ export class RegistrarAlumnoComponent implements OnInit {
     };
     this.alumnosservice.addAlumno(alumno).subscribe({
       next: (data) => {
-        this.snackBar.open('El usuario fue registrado con exito!', '', {
+        this.snackBar.open('El alumno fue registrado con exito!', '', {
           duration: 6000,
         });
         this.router.navigate(['/']);

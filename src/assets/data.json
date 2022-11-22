@@ -3,15 +3,46 @@
     {
       "id": 1,
       "nombres": "Nicole",
-      "apellidos": "soteldinho",
+      "apellidos": "Soteldinho",
       "dni": "612123122",
       "codigo": "201923033"
+    },
+    {
+      "id": 2,
+      "nombres": "Junior",
+      "apellidos": "Gallardo",
+      "dni": "84739532",
+      "codigo": "u2019234344"
+    },
+    {
+      "id": 3,
+      "nombres": "Gabriel Omar",
+      "apellidos": "Taipe Quito",
+      "dni": "75268397",
+      "codigo": "u201923432"
     }
   ],
   "admin": [
     {
+      "id": 1,
       "usuario": "admin",
-      "password": "admin11"
+      "password": "admin11",
+      "email": "ejemplo@gmail.com",
+      "numero": "998804138"
+    },
+    {
+      "id": 2,
+      "usuario": "Gabriel Omar",
+      "password": "Contra02$$",
+      "email": "gabitotaipe01@gmail.com",
+      "numero": "985218972"
+    },
+    {
+      "id": 3,
+      "usuario": "Junior",
+      "password": "arquerito1",
+      "email": "junior@gmail.com",
+      "numero": "987654321"
     }
   ]
 }

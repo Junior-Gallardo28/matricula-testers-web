@@ -60,11 +60,14 @@ p {
     border-color: transparent;
 }
 
+.btnRegistrateAqui{
+
+    border-color: transparent;
+    text-decoration: dashed; 
+}
+
 a:link{
 
     border-color: transparent;
     text-decoration: underline; 
 }
-
-
-

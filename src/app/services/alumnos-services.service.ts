@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Alumno } from '../models/alumno';
+import { map } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +11,10 @@ export class AlumnosServicesService {
   constructor( private http: HttpClient) {}
 
   addAlumno(alumno:Alumno) {
-    return this.http.post<Alumno>(this.base_URL, alumno);
+    return this.http.post<Alumno>(this.base_URL, alumno)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
   }
 
   getAlumno() {
