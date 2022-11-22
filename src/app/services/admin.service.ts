@@ -1,0 +1,15 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
+import { Admin } from '../models/admin';
+
+import { Observable } from 'rxjs';
+@Injectable({
+  providedIn: 'root'
+})
+export class AdminService {
+  base_URL_Admin: string = environment.base_URL_Admin;
+ 
+  constructor()
+{}  
+}

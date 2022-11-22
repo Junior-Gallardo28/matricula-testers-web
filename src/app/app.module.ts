@@ -13,8 +13,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { RegistrarAlumnoComponent } from './components/registrar-alumno/registrar-alumno.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LoginAdminComponent } from './components/login-admin/login-admin.component';
+import { HomeComponent } from './components/home/home.component';
+import { MatFormFieldModule, MatLabel } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import { RegistrarAlumnoComponent } from './components/registrar-alumno/registrar-alumno.component';
+import { ListarAlumnosComponent } from './components/listar-alumnos/listar-alumnos.component';
+import {MatTableModule} from '@angular/material/table';
+import { EditAlumnosComponent } from './components/edit-alumnos/edit-alumnos.component';
+import {MatMenu, MatMenuModule} from '@angular/material/menu';
+import { SignupAdminComponent } from './components/signup-admin/signup-admin.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,6 +33,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ToolbarComponent,
     SidenavComponent,
     RegistrarAlumnoComponent,
+    LoginAdminComponent,
+    HomeComponent,
+    ListarAlumnosComponent,
+    EditAlumnosComponent,
+    SignupAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +50,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule,
+    MatTableModule,
+    MatMenuModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

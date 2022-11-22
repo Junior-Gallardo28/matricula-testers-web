@@ -1,11 +1,36 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
+
         <span>Matricula Testers</span>
-        <span class = "spacer"></span>
-        <button mat-stroked-button class = "Alumnos" routerLink="alumnos/registrar-alumnos"> Alumnos</button>
-        <button mat-stroked-button class = "Profesor"> Profesor</button>
-        <button mat-stroked-button class = "Cursos"> Cursos</button>
-        <button mat-stroked-button class = "Matricula"> Matricula</button>
-        <button mat-stroked-button class = "Reportes"> Reportes</button>
+
+        <span class="spacer"></span>
+
+        <button mat-stroked-button class="Matricula" routerLink="/"> Inicio </button>
+
+        <button mat-stroked-button [mat-menu-trigger-for]="menualumnos" class="Alumnos"> Alumnos</button>
+        <mat-menu #menualumnos="matMenu">
+            <button mat-menu-item routerLink="alumnos/registrar-alumnos">Registrar alumnos</button>
+            <button mat-menu-item routerLink="alumnos/listar-alumnos"> Ver alumnos </button>
+        </mat-menu>
+
+        <!--Pendiente de routing-->
+        <button mat-stroked-button [mat-menu-trigger-for]="menuprofesor" class="Profesor"> Profesor</button>
+        <mat-menu #menuprofesor="matMenu">
+            <button mat-menu-item routerLink="profesor/registrar-profesor">Registrar profesores</button>
+            <button mat-menu-item routerLink="profesor/listar-profesor"> Ver profesores </button>
+        </mat-menu>
+        <!--Pendiente de routing-->
+        <button mat-stroked-button [mat-menu-trigger-for]="menucursos" class="Cursos"> Cursos</button>
+        <mat-menu #menucursos="matMenu">
+            <button mat-menu-item routerLink="curso/registrar-curso">Registrar cursos</button>
+            <button mat-menu-item routerLink="curso/listar-cursos"> Ver cursos</button>
+        </mat-menu>
+        <!--Pendiente de routing-->
+        <button mat-stroked-button [mat-menu-trigger-for]="menureportes" class="Reportes"> Reportes</button>
+        <mat-menu #menureportes="matMenu">
+            <button mat-menu-item>Obtener Reportes</button>
+        </mat-menu>
+
+
     </mat-toolbar-row>
 </mat-toolbar>

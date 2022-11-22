@@ -1,0 +1,20 @@
+<div class="circulo">
+    <p> MATRICULA TESTERS </p>
+</div>
+
+<div class="formulario-registro">
+    <span class="Registro">Inicio de Sesión</span>
+    <form class="formulario" [formGroup]="loginForm" (ngSubmit)="login()">
+        <!--Input para el nombre-->
+        <mat-form-field class="Usuario">
+            <input formControlName = "usuario" matInput placeholder="Usuario">
+        </mat-form-field>
+        <!--Input para la contraseña-->
+        <mat-form-field class="contraseña">
+            <input  formControlName = "password"type="password" matInput placeholder="Contraseña">
+        </mat-form-field>
+        <button mat-stroked-button class="btn-registrar"> Enviar </button>
+    </form>
+
+    <a href="" class="btnIniciaSesionAqui" style ="color: white; margin-top: 10px;" routerLink="/signup">¿No eres administrador? Registrate aquí!!</a>
+</div>
