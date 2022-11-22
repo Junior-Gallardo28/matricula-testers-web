@@ -23,6 +23,12 @@ import { ListarAlumnosComponent } from './components/listar-alumnos/listar-alumn
 import {MatTableModule} from '@angular/material/table';
 import { EditAlumnosComponent } from './components/edit-alumnos/edit-alumnos.component';
 import {MatMenu, MatMenuModule} from '@angular/material/menu';
+import { RegistrarProfesorComponent } from './components/registrar-profesor/registrar-profesor.component';
+import { ListarProfesoresComponent } from './components/listar-profesores/listar-profesores.component';
+import { EditProfesorComponent } from './components/edit-profesor/edit-profesor.component';
+import { RegistrarCursoComponent } from './components/registrar-curso/registrar-curso.component';
+import { EditCursoComponent } from './components/edit-curso/edit-curso.component';
+import { ListarCursosComponent } from './components/listar-cursos/listar-cursos.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +39,13 @@ import {MatMenu, MatMenuModule} from '@angular/material/menu';
     LoginAdminComponent,
     HomeComponent,
     ListarAlumnosComponent,
-    EditAlumnosComponent
+    EditAlumnosComponent,
+    RegistrarProfesorComponent,
+    ListarProfesoresComponent,
+    EditProfesorComponent,
+    RegistrarCursoComponent,
+    EditCursoComponent,
+    ListarCursosComponent
   ],
   imports: [
     BrowserModule,

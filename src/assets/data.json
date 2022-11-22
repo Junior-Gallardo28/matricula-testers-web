@@ -3,15 +3,57 @@
     {
       "id": 1,
       "nombres": "Nicole",
-      "apellidos": "soteldinho",
+      "apellidos": "de Gallardo",
       "dni": "612123122",
       "codigo": "201923033"
+    },
+    {
+      "id": 2,
+      "nombres": "Junior ",
+      "apellidos": "Gallardo",
+      "dni": "73074250",
+      "codigo": "201923001"
+    },
+    {
+      "id": 3,
+      "nombres": "Juan",
+      "apellidos": "Ronaldo",
+      "dni": "12345678",
+      "codigo": "87654321"
+    },
+    {
+      "id": 4,
+      "nombres": "A",
+      "apellidos": "a",
+      "dni": "12345698",
+      "codigo": "12345651"
     }
   ],
-  "admin": [
+  "profesor": [
     {
-      "usuario": "admin",
-      "password": "admin11"
+      "id": 1,
+      "nombres": "Junior ",
+      "apellidos": "Gallardo",
+      "dni": "73074250",
+      "codigo": "201923030"
+    },
+    {
+      "id": 2,
+      "nombres": "a",
+      "apellidos": "a",
+      "dni": "12345651",
+      "codigo": "12345651"
     }
+  ],
+
+  "curso": [
+    {
+      "id": 1,
+      "nombre": "Matematica",
+      "descripcion": "Curso de matematica basica"
+    }
+
+
+
   ]
 }

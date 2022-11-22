@@ -35,8 +35,8 @@ export class EditAlumnosComponent implements OnInit {
         id: this.idAlumno,
         nombres:[this.alumno.nombres, Validators.required],
         apellidos:[this.alumno.apellidos, Validators.required],
-        dni:[this.alumno.dni, Validators.required],
-        codigo:[this.alumno.codigo, Validators.required],
+        dni:[this.alumno.dni, [Validators.required,Validators.maxLength(8)]],
+        codigo:[this.alumno.codigo,  [Validators.required, Validators.maxLength(8)]],
       });
     });
   }
