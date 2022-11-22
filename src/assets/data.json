@@ -3,46 +3,57 @@
     {
       "id": 1,
       "nombres": "Nicole",
-      "apellidos": "Soteldinho",
+      "apellidos": "de Gallardo",
       "dni": "612123122",
       "codigo": "201923033"
     },
     {
       "id": 2,
-      "nombres": "Junior",
+      "nombres": "Junior ",
       "apellidos": "Gallardo",
-      "dni": "84739532",
-      "codigo": "u2019234344"
+      "dni": "73074250",
+      "codigo": "201923001"
     },
     {
       "id": 3,
-      "nombres": "Gabriel Omar",
-      "apellidos": "Taipe Quito",
-      "dni": "75268397",
-      "codigo": "u201923432"
+      "nombres": "Juan",
+      "apellidos": "Ronaldo",
+      "dni": "12345678",
+      "codigo": "87654321"
+    },
+    {
+      "id": 4,
+      "nombres": "A",
+      "apellidos": "a",
+      "dni": "12345698",
+      "codigo": "12345651"
     }
   ],
-  "admin": [
+  "profesor": [
     {
       "id": 1,
-      "usuario": "admin",
-      "password": "admin11",
-      "email": "ejemplo@gmail.com",
-      "numero": "998804138"
+      "nombres": "Junior ",
+      "apellidos": "Gallardo",
+      "dni": "73074250",
+      "codigo": "201923030"
     },
     {
       "id": 2,
-      "usuario": "Gabriel Omar",
-      "password": "Contra02$$",
-      "email": "gabitotaipe01@gmail.com",
-      "numero": "985218972"
-    },
-    {
-      "id": 3,
-      "usuario": "Junior",
-      "password": "arquerito1",
-      "email": "junior@gmail.com",
-      "numero": "987654321"
+      "nombres": "a",
+      "apellidos": "a",
+      "dni": "12345651",
+      "codigo": "12345651"
     }
+  ],
+
+  "curso": [
+    {
+      "id": 1,
+      "nombre": "Matematica",
+      "descripcion": "Curso de matematica basica"
+    }
+
+
+
   ]
 }

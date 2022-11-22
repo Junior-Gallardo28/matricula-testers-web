@@ -25,12 +25,13 @@ export class RegistrarAlumnoComponent implements OnInit {
     this.myForm = this.fb.group({
       id: [''],
       nombre: ['', [Validators.required, Validators.maxLength(20)]],
-      apellido: ['', Validators.required],
-      dni: ['', Validators.required],
-      codigo: ['', Validators.required],
+      apellido: ['', Validators.required], 
+      dni: ['', [Validators.required, Validators.maxLength(8)]], 
+      codigo: ['', [Validators.required, Validators.maxLength(8)]],
 
     });
   }
+
 
   saveAlumnos(): void {
     const alumno: Alumno = {

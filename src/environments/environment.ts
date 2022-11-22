@@ -4,8 +4,11 @@
 
 export const environment = {
   production: true,
-  base_URL: 'http://localhost:3000/alumnos', 
-  base_URL_Admin: 'http://localhost:3000/admin'
+  base_URL: 'http://localhost:3000/alumnos',
+  base_URL_Admin: 'http://localhost:3000/admin',
+  base_URL_Profesor: 'http://localhost:3000/profesor',
+  base_URL_Curso: 'http://localhost:3000/curso'
+  
 };
 
 /*
