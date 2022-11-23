@@ -31,6 +31,7 @@ import { EditCursoComponent } from './components/edit-curso/edit-curso.component
 import { ListarCursosComponent } from './components/listar-cursos/listar-cursos.component';
 import { SignupAdminComponent } from './components/signup-admin/signup-admin.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,12 +42,6 @@ import { SignupAdminComponent } from './components/signup-admin/signup-admin.com
     HomeComponent,
     ListarAlumnosComponent,
     EditAlumnosComponent,
-    RegistrarProfesorComponent,
-    ListarProfesoresComponent,
-    EditProfesorComponent,
-    RegistrarCursoComponent,
-    EditCursoComponent,
-    ListarCursosComponent,
     SignupAdminComponent
   ],
   imports: [
