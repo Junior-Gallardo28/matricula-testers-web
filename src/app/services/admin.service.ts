@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AdminService {
-  base_URL: string = environment.base_URL;
+  base_URL_Admin: string = environment.base_URL_Admin;
  
   constructor()
 {}  

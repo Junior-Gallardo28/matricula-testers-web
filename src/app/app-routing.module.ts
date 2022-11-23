@@ -11,12 +11,13 @@ import { EditProfesorComponent } from './components/edit-profesor/edit-profesor.
 import { RegistrarCursoComponent } from './components/registrar-curso/registrar-curso.component';
 import { ListarCursosComponent } from './components/listar-cursos/listar-cursos.component';
 import { EditCursoComponent } from './components/edit-curso/edit-curso.component';
+import { SignupAdminComponent } from './components/signup-admin/signup-admin.component';
 
 const routes: Routes = [
   
   {path: '', component: HomeComponent},
-  {path:'alumnos/registrar-alumnos', component: RegistrarAlumnoComponent},
-  {path:'login',component:LoginAdminComponent},
+  {path: 'alumnos/registrar-alumnos', component: RegistrarAlumnoComponent},
+  {path: 'login',component:LoginAdminComponent},
   {path: 'alumnos/listar-alumnos', component: ListarAlumnosComponent},
   {path: 'alumnos/editar-alumno/:id',component:EditAlumnosComponent},
   {path: 'profesor/registrar-profesor', component:RegistrarProfesorComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path: 'profesor/editar-profesor/:id', component: EditProfesorComponent},
   {path: 'curso/registrar-curso', component: RegistrarCursoComponent},
   {path: 'curso/listar-cursos', component: ListarCursosComponent},
-  {path: 'curso/editar-curso/:id', component: EditCursoComponent}
+  {path: 'curso/editar-curso/:id', component: EditCursoComponent},
+  {path: 'signup', component:SignupAdminComponent}
   
   
   

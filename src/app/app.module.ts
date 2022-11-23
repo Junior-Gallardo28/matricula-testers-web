@@ -29,6 +29,7 @@ import { EditProfesorComponent } from './components/edit-profesor/edit-profesor.
 import { RegistrarCursoComponent } from './components/registrar-curso/registrar-curso.component';
 import { EditCursoComponent } from './components/edit-curso/edit-curso.component';
 import { ListarCursosComponent } from './components/listar-cursos/listar-cursos.component';
+import { SignupAdminComponent } from './components/signup-admin/signup-admin.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ListarCursosComponent } from './components/listar-cursos/listar-cursos.
     EditProfesorComponent,
     RegistrarCursoComponent,
     EditCursoComponent,
-    ListarCursosComponent
+    ListarCursosComponent,
+    SignupAdminComponent
   ],
   imports: [
     BrowserModule,
