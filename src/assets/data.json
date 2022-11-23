@@ -45,15 +45,25 @@
       "codigo": "12345651"
     }
   ],
-
   "curso": [
     {
       "id": 1,
       "nombre": "Matematica",
       "descripcion": "Curso de matematica basica"
     }
-
-
-
+  ],
+  "Admin": [
+    {
+      "usuario": "Gabriel",
+      "password": "87654321",
+      "email": "gabriel@gmail.com",
+      "numero": "998804138"
+    },
+    {
+      "usuario": "Willy",
+      "password": "12345678",
+      "email": "willy@gmail.com",
+      "numero": "985218972"
+    }
   ]
 }

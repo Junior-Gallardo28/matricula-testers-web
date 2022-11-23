@@ -16,8 +16,8 @@ import { SignupAdminComponent } from './components/signup-admin/signup-admin.com
 const routes: Routes = [
   
   {path: '', component: HomeComponent},
-  {path:'alumnos/registrar-alumnos', component: RegistrarAlumnoComponent},
-  {path:'login',component:LoginAdminComponent},
+  {path: 'alumnos/registrar-alumnos', component: RegistrarAlumnoComponent},
+  {path: 'login',component:LoginAdminComponent},
   {path: 'alumnos/listar-alumnos', component: ListarAlumnosComponent},
   {path: 'alumnos/editar-alumno/:id',component:EditAlumnosComponent},
   {path: 'profesor/registrar-profesor', component:RegistrarProfesorComponent},
@@ -26,8 +26,8 @@ const routes: Routes = [
   {path: 'curso/registrar-curso', component: RegistrarCursoComponent},
   {path: 'curso/listar-cursos', component: ListarCursosComponent},
   {path: 'curso/editar-curso/:id', component: EditCursoComponent},
-  { path: 'signup', component: SignupAdminComponent }
-
+  {path: 'signup', component:SignupAdminComponent}
+  
   
   
 

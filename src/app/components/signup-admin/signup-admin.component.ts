@@ -10,9 +10,10 @@ import { Admin } from 'src/app/models/admin';
   styleUrls: ['./signup-admin.component.css']
 })
 export class SignupAdminComponent implements OnInit {
-
+  
   public signupForm !: FormGroup;
-   constructor(private formBuilder : FormBuilder, private http : HttpClient, private router: Router) { }
+  constructor(private formBuilder : FormBuilder, private http : HttpClient, private router: Router) { }
+
 
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({

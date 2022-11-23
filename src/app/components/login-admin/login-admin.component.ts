@@ -11,10 +11,9 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
   styleUrls: ['./login-admin.component.css']
 })
 export class LoginAdminComponent implements OnInit {
-
   loginForm !: FormGroup;
   constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router
-    , private snackBar: MatSnackBar) { }
+    , private snackBar: MatSnackBar) {}
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
