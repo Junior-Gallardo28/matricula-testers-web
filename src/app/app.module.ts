@@ -42,7 +42,13 @@ import { SignupAdminComponent } from './components/signup-admin/signup-admin.com
     HomeComponent,
     ListarAlumnosComponent,
     EditAlumnosComponent,
-    SignupAdminComponent
+    SignupAdminComponent,
+    RegistrarProfesorComponent,
+    ListarProfesoresComponent,
+    EditProfesorComponent,
+    RegistrarCursoComponent,
+    EditCursoComponent,
+    ListarCursosComponent
   ],
   imports: [
     BrowserModule,
