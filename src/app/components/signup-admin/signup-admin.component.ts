@@ -17,7 +17,7 @@ export class SignupAdminComponent implements OnInit {
 
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({
-      id: 0,
+      id: [''],
       usuario:[''],
       password:[''],
       email:[''],
@@ -27,7 +27,7 @@ export class SignupAdminComponent implements OnInit {
 
   signUp(){
 
-    this.http.post<any>("http://localhost:3000/admin", this.signupForm.value)
+    this.http.post<Admin>("http://localhost:3000/admin", this.signupForm.value)
     .subscribe((res)=>{
       alert("Registrado exitosamente");
       this.signupForm.reset();

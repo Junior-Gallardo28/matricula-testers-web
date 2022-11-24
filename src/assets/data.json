@@ -1,13 +1,6 @@
 {
   "alumnos": [
     {
-      "id": 1,
-      "nombres": "Nicole",
-      "apellidos": "de Gallardo",
-      "dni": "612123122",
-      "codigo": "201923033"
-    },
-    {
       "id": 2,
       "nombres": "Junior ",
       "apellidos": "Gallardo",
@@ -22,11 +15,25 @@
       "codigo": "87654321"
     },
     {
-      "id": 4,
-      "nombres": "A",
-      "apellidos": "a",
-      "dni": "12345698",
-      "codigo": "12345651"
+      "id": 6,
+      "nombres": "Enzo Josue",
+      "apellidos": "Peña Valdivia",
+      "dni": "73350060",
+      "codigo": "U2020113"
+    },
+    {
+      "id": 7,
+      "nombres": "Enzo Josue",
+      "apellidos": "Peña Valdivia",
+      "dni": "73350060",
+      "codigo": "U2020113"
+    },
+    {
+      "id": 8,
+      "nombres": "Enzo Josue",
+      "apellidos": "Peña Valdivia",
+      "dni": "73350060",
+      "codigo": "U2020113"
     }
   ],
   "profesor": [
@@ -39,10 +46,17 @@
     },
     {
       "id": 2,
-      "nombres": "a",
-      "apellidos": "a",
-      "dni": "12345651",
-      "codigo": "12345651"
+      "nombres": "Patrick",
+      "apellidos": "Quispe Mamani",
+      "dni": "87350060",
+      "codigo": "202011135"
+    },
+    {
+      "id": 3,
+      "nombres": "Patrick",
+      "apellidos": "Quispe Mamani",
+      "dni": "87350060",
+      "codigo": "202011135"
     }
   ],
   "curso": [
@@ -50,20 +64,39 @@
       "id": 1,
       "nombre": "Matematica",
       "descripcion": "Curso de matematica basica"
+    },
+    {
+      "id": 2,
+      "nombre": "Fisica",
+      "descripcion": "6 creditos "
+    },
+    {
+      "id": 3,
+      "nombre": "Fisica",
+      "descripcion": "6 creditos"
     }
   ],
   "Admin": [
     {
+      "id": 1,
       "usuario": "Gabriel",
       "password": "87654321",
       "email": "gabriel@gmail.com",
       "numero": "998804138"
     },
     {
+      "id": 2,
       "usuario": "Willy",
       "password": "12345678",
       "email": "willy@gmail.com",
       "numero": "985218972"
+    },
+    {
+      "id": 3,
+      "usuario": "Junior",
+      "password": "12345678",
+      "email": "juniordavidgama@gmail.com",
+      "numero": "937808538"
     }
   ]
 }

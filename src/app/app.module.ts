@@ -30,6 +30,8 @@ import { RegistrarCursoComponent } from './components/registrar-curso/registrar-
 import { EditCursoComponent } from './components/edit-curso/edit-curso.component';
 import { ListarCursosComponent } from './components/listar-cursos/listar-cursos.component';
 import { SignupAdminComponent } from './components/signup-admin/signup-admin.component';
+import { MatTableExporterDirective } from 'mat-table-exporter';
+import { MatTableExporterModule } from 'mat-table-exporter/public-api';
 
 
 @NgModule({
@@ -65,7 +67,8 @@ import { SignupAdminComponent } from './components/signup-admin/signup-admin.com
     MatFormFieldModule,
     MatTableModule,
     MatMenuModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

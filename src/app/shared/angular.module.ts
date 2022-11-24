@@ -34,7 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     MatSidenavModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   exports: [
     MatSliderModule,
